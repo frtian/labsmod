@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "labsmod",
+	"version": "${version}",
+	"name": "Labs Mod",
+	"description": "This is a laboratory mod for testing Fabric features. And Learning modding!",
+	"authors": [
+		"fr_tian"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/labsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dstudios.labsmod.LabsMod"
+		],
+		"fabric-datagen": [
+			"com.dstudios.labsmod.LabsModDataGenerator"
+		],
+		"client": [
+			"com.dstudios.labsmod.LabsModClient"
+		]
+	},
+	"mixins": [
+		"labsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
