@@ -1,9 +1,10 @@
 package com.dstudios.labsmod;
 
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.dstudios.labsmod.item.ModItems;
 
 public class LabsMod implements ModInitializer {
 	public static final String MOD_ID = "labsmod";
@@ -11,6 +12,6 @@ public class LabsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
